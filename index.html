@@ -1,77 +1,60 @@
-```html
-<!-- TEAM -->
+<!DOCTYPE html>
 
-<section id="team">
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mikastun_Server – Eine aktive und freundliche Discord Community.">
+    <title>Mikastun_Server | Community</title>
 
-    <div class="container">
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
-        <h2 class="section-title">
-            Unser Team
-        </h2>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #050812;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
 
-        <p class="section-subtitle">
-            Das Team hinter Mikastun_Server
-        </p>
+    /* Hintergrund */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        background: #006eff;
+        opacity: 0.12;
+        filter: blur(140px);
+        border-radius: 50%;
+        top: -200px;
+        left: -200px;
+        z-index: -1;
+    }
 
-        <div class="grid">
+    body::after {
+        content: "";
+        position: fixed;
+        width: 500px;
+        height: 500px;
+        background: #00aaff;
+        opacity: 0.08;
+        filter: blur(130px);
+        border-radius: 50%;
+        bottom: -200px;
+        right: -150px;
+        z-index: -1;
+    }
 
-            <!-- ADMINISTRATOR -->
-
-            <article class="card team-card">
-
-                <div class="team-avatar">
-                    👑
-                </div>
-
-                <h3>
-                    Administrator
-                </h3>
-
-                <p class="role">
-                    Administrator
-                </p>
-
-                <p>
-                    Kümmert sich um die Verwaltung
-                    des Servers und die Community.
-                </p>
-
-            </article>
-
-
-            <!-- MODERATOR -->
-
-            <article class="card team-card">
-
-                <div class="team-avatar">
-                    🛡️
-                </div>
-
-                <h3>
-                    Moderator
-                </h3>
-
-                <p class="role">
-                    Moderator
-                </p>
-
-                <p>
-                    Sorgt für Ordnung und unterstützt
-                    die Mitglieder auf dem Server.
-                </p>
-
-            </article>
-
-
-            <!-- DEVELOPER -->
-
-            <article class="card team-card">
-
-                <div class="team-avatar">
-                    💻
-                </div>
-
-                <h3>
-                    Developer
-                </h3>
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
 ```
