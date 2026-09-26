@@ -450,6 +450,7 @@
         <ul class="nav-links">
             <li><a href="#start">Start</a></li>
             <li><a href="#community">Community</a></li>
+            <li><a href="#games">Games</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#regeln">Regeln</a></li>
             <li><a href="#beitreten">Beitreten</a></li>
@@ -555,6 +556,262 @@
 
 </section>
 
+<!-- GAMES & AKTIVITÄTEN -->
+
+<section id="games">
+
+```
+<h2 class="section-title">
+    Games & <span>Aktivitäten</span>
+</h2>
+
+<p class="section-subtitle">
+    Gemeinsam spielen, chillen und Spaß haben
+</p>
+
+<div class="games-grid">
+
+    <!-- Gaming -->
+    <div class="game-card">
+        <div class="game-icon">🎮</div>
+        <div class="game-content">
+            <h3>Gaming</h3>
+            <p>
+                Spiele gemeinsam mit anderen Mitgliedern
+                und finde neue Leute zum Zocken.
+            </p>
+            <span class="game-tag">GAMING</span>
+        </div>
+    </div>
+
+    <!-- Voice Chat -->
+    <div class="game-card">
+        <div class="game-icon">🎙️</div>
+        <div class="game-content">
+            <h3>Voice Chat</h3>
+            <p>
+                Unterhalte dich mit anderen Mitgliedern
+                und verbringe gemeinsam Zeit im Voice.
+            </p>
+            <span class="game-tag">VOICE</span>
+        </div>
+    </div>
+
+    <!-- Events -->
+    <div class="game-card">
+        <div class="game-icon">🏆</div>
+        <div class="game-content">
+            <h3>Events</h3>
+            <p>
+                Nimm an Community-Events, Wettbewerben
+                und besonderen Aktionen teil.
+            </p>
+            <span class="game-tag">EVENTS</span>
+        </div>
+    </div>
+
+    <!-- Fun -->
+    <div class="game-card">
+        <div class="game-icon">😂</div>
+        <div class="game-content">
+            <h3>Fun & Memes</h3>
+            <p>
+                Teile Memes, lustige Momente und
+                unterhalte dich mit der Community.
+            </p>
+            <span class="game-tag">FUN</span>
+        </div>
+    </div>
+
+    <!-- Musik -->
+    <div class="game-card">
+        <div class="game-icon">🎵</div>
+        <div class="game-content">
+            <h3>Musik</h3>
+            <p>
+                Entspanne dich, höre Musik und
+                genieße gemeinsame Sessions.
+            </p>
+            <span class="game-tag">MUSIC</span>
+        </div>
+    </div>
+
+    <!-- Projekte -->
+    <div class="game-card">
+        <div class="game-icon">🛠️</div>
+        <div class="game-content">
+            <h3>Community-Projekte</h3>
+            <p>
+                Arbeite gemeinsam mit anderen an
+                spannenden Ideen und Projekten.
+            </p>
+            <span class="game-tag">PROJECTS</span>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<style>
+
+    /* Games & Aktivitäten */
+
+    #games {
+        position: relative;
+    }
+
+    .games-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .game-card {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        padding: 25px;
+        min-height: 180px;
+
+        background: linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.95),
+            rgba(5, 15, 30, 0.95)
+        );
+
+        border: 1px solid rgba(0, 140, 255, 0.18);
+        border-radius: 18px;
+
+        overflow: hidden;
+        transition: 0.35s;
+    }
+
+    .game-card::before {
+        content: "";
+        position: absolute;
+
+        width: 140px;
+        height: 140px;
+
+        background: #008cff;
+        opacity: 0.08;
+
+        filter: blur(45px);
+        border-radius: 50%;
+
+        top: -70px;
+        right: -50px;
+
+        transition: 0.35s;
+    }
+
+    .game-card:hover {
+        transform: translateY(-8px);
+
+        border-color: #008cff;
+
+        box-shadow:
+            0 15px 40px rgba(0, 140, 255, 0.18),
+            inset 0 0 25px rgba(0, 140, 255, 0.04);
+    }
+
+    .game-card:hover::before {
+        opacity: 0.18;
+        transform: scale(1.4);
+    }
+
+    .game-icon {
+        min-width: 65px;
+        width: 65px;
+        height: 65px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 30px;
+
+        background: rgba(0, 140, 255, 0.10);
+
+        border: 1px solid rgba(0, 140, 255, 0.35);
+
+        border-radius: 16px;
+
+        transition: 0.35s;
+    }
+
+    .game-card:hover .game-icon {
+        transform: scale(1.1) rotate(-3deg);
+
+        background: rgba(0, 140, 255, 0.18);
+
+        box-shadow:
+            0 0 25px rgba(0, 140, 255, 0.25);
+    }
+
+    .game-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .game-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .game-content p {
+        color: #94a3b8;
+        line-height: 1.55;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .game-tag {
+        display: inline-block;
+
+        padding: 5px 10px;
+
+        border-radius: 20px;
+
+        background: rgba(0, 140, 255, 0.10);
+
+        border: 1px solid rgba(0, 140, 255, 0.25);
+
+        color: #008cff;
+
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 950px) {
+
+        .games-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    /* Handy */
+
+    @media (max-width: 600px) {
+
+        .games-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .game-card {
+            min-height: auto;
+        }
+
+    }
+
+</style>
+    
 
 <!-- TEAM -->
 <section id="team">
