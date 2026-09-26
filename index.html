@@ -432,6 +432,216 @@
     }
 </style>
 
+<style>
+    /* ============================= */
+    /*       MOBILE OPTIMIERUNG      */
+    /* ============================= */
+
+    @media (max-width: 700px) {
+
+        /* Navigation */
+        nav {
+            position: fixed;
+        }
+
+        .nav-container {
+            padding: 12px 15px;
+        }
+
+        .logo {
+            font-size: 18px;
+        }
+
+        .nav-links {
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            font-size: 12px;
+            padding: 5px;
+        }
+
+
+        /* Sections */
+        section {
+            padding: 80px 15px;
+        }
+
+
+        /* Startseite */
+        .hero {
+            min-height: 100vh;
+            padding: 150px 20px 70px;
+        }
+
+        .badge {
+            font-size: 12px;
+            padding: 7px 12px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.05;
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+
+        /* Buttons */
+        .buttons {
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+            padding: 14px 20px;
+        }
+
+
+        /* Überschriften */
+        .section-title {
+            font-size: 30px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* Community */
+        .cards {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            padding: 23px;
+        }
+
+
+        /* Games */
+        .games-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .game-card {
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .game-icon {
+            min-width: 55px;
+            width: 55px;
+            height: 55px;
+            font-size: 25px;
+        }
+
+        .game-content h3 {
+            font-size: 18px;
+        }
+
+        .game-content p {
+            font-size: 13px;
+        }
+
+
+        /* Team */
+        .team-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .team-card {
+            padding: 25px 20px;
+        }
+
+
+        /* Regeln */
+        .rule {
+            padding: 18px;
+            gap: 12px;
+        }
+
+        .rule-number {
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
+        }
+
+        .rule h3 {
+            font-size: 17px;
+        }
+
+        .rule p {
+            font-size: 13px;
+        }
+
+
+        /* Discord-Bereich */
+        .join-box {
+            padding: 50px 20px;
+        }
+
+        .join-box h2 {
+            font-size: 30px;
+        }
+
+        .join-box p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+
+        /* Footer */
+        footer {
+            font-size: 12px;
+            padding: 25px 15px;
+        }
+    }
+
+
+    /* Sehr kleine Smartphones */
+
+    @media (max-width: 400px) {
+
+        .nav-links {
+            gap: 5px;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .section-title {
+            font-size: 27px;
+        }
+
+        .game-card {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .game-icon {
+            margin-bottom: 5px;
+        }
+    }
+</style>
+
+    
 </head>
 
 <body>
